@@ -1,0 +1,18 @@
+//APPL StorWize VersionChanges=N
+
+//NAME StorWizeHealth P 60 ClearValues=Y Interval=30
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/SW/log/lshealth.log COPY
+//ATTRIBUTES TAB
+Host            D       30      ATOMIC
+Sensor          D       30
+Status          D       10
+Value           D       100
+DateTime        D       30
+
+//NAME StorWizeRun  K 3500 AddTimeStamp  Interval=60
+//SOURCE Script /bin/bash /opt/IBM/ITM/lx8266/um/scripts/SW/run.sh  Runtime=60
+//ATTRIBUTES
+HostName        (GetEnvValue = HOSTNAME)
+Script          (GetEnvValue = PROBE)
+PreviousValue   (GetEnvValue = PREV_VALUE)
+Stdout  D  500  KEY

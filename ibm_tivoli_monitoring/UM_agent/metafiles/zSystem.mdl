@@ -1,0 +1,9 @@
+//APPL Z00_zSystemMon ProductCode=PZ VersionChanges=N
+
+//NAME ZTemperature P 60 AddTimeStamp ClearValues=Y Interval=30
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/ZSystem/log/main.log COPY
+//ATTRIBUTES =
+ParamName                       D       50              ATOMIC
+ParamVal                        D       50
+HMCid				D	10		ATOMIC
+

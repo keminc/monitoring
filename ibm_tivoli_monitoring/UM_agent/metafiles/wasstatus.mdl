@@ -1,0 +1,20 @@
+//APPL WebStatus VersionChanges=N
+
+
+//NAME WebStatus P 60 AddTimeStamp ClearValues=Y Interval=30
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/WebStatus/log/was.log COPY 
+//RECORDSET  13
+//ATTRIBUTES NEWLINE
+Name				D       120   		 ATOMIC 	DLMSTRBGN='='  DLMSTREND=''
+Description			D       200   		DLMSTRBGN='='  DLMSTREND=''
+TotalAccesses			C       1000000000    	DLMSTRBGN='='  DLMSTREND=''
+TotalkBytes			C	1000000000	DLMSTRBGN='='  DLMSTREND=''
+CPULoad				C	1000		DLMSTRBGN='='  DLMSTREND=''
+Uptime				C	1000000000	DLMSTRBGN='='  DLMSTREND=''
+ReqPerSec			C	100000000	DLMSTRBGN='='  DLMSTREND=''
+BytesPerSec			C	100000000	DLMSTRBGN='='  DLMSTREND=''
+BytesPerReq			C	100000000	DLMSTRBGN='='  DLMSTREND=''
+BusyWorkers			C	100000000	DLMSTRBGN='='  DLMSTREND=''
+IdleWorkers			C	1000000		DLMSTRBGN='='  DLMSTREND=''
+TotlAcDelta			C       10000000    	DLMSTRBGN='='  DLMSTREND=''
+DateTime			D       50   		 ATOMIC 	DLMSTRBGN='='  DLMSTREND=''

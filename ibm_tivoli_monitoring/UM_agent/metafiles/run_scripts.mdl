@@ -1,0 +1,50 @@
+//APPL RunScrpts VersionChanges=N
+
+//NAME WebStatus K 3500 AddTimeStamp  Interval=60
+//SOURCE Script /bin/bash  /opt/IBM/ITM/lx8266/um/scripts/WebStatus/was_request.sh Runtime=500
+//ATTRIBUTES
+HostName        (GetEnvValue = HOSTNAME)
+Script          (GetEnvValue = PROBE)
+PreviousValue   (GetEnvValue = PREV_VALUE)
+Stdout  D  500  KEY
+
+
+
+//NAME PortAvab K 3500 AddTimeStamp  Interval=1800
+//SOURCE Script /bin/bash  /opt/IBM/ITM/lx8266/um/scripts/PortScaner/check_port_avab.sh Runtime=800
+//ATTRIBUTES
+HostName        (GetEnvValue = HOSTNAME)
+Script          (GetEnvValue = PROBE)
+PreviousValue   (GetEnvValue = PREV_VALUE)
+Stdout  D  500  KEY
+
+
+//NAME ChannelSpeed K 3500 AddTimeStamp  Interval=900
+//SOURCE Script /bin/bash /opt/IBM/ITM/lx8266/um/scripts/ChannelWidth/run.sh Runtime=700
+//ATTRIBUTES
+HostName        (GetEnvValue = HOSTNAME)
+Script          (GetEnvValue = PROBE)
+PreviousValue   (GetEnvValue = PREV_VALUE)
+Stdout  D  500  KEY
+
+
+
+//NAME SelfMonitorReg K 3500 AddTimeStamp  Interval=86500
+//SOURCE Script /bin/bash /root/scripts/SelfMonitoringReg/run.sh  Runtime=5000
+//ATTRIBUTES
+HostName        (GetEnvValue = HOSTNAME)
+Script          (GetEnvValue = PROBE)
+PreviousValue   (GetEnvValue = PREV_VALUE)
+Stdout  D  500  KEY
+
+
+
+//NAME SystemZ_Agent  K 3500 AddTimeStamp  Interval=600
+//SOURCE Script /bin/bash /opt/IBM/ITM/lx8266/um/scripts/ZSystem/run.sh Runtime=60
+//ATTRIBUTES
+HostName        (GetEnvValue = HOSTNAME)
+Script          (GetEnvValue = PROBE)
+PreviousValue   (GetEnvValue = PREV_VALUE)
+Stdout  D  500  KEY
+
+

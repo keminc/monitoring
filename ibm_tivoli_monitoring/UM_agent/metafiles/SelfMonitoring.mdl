@@ -1,0 +1,20 @@
+//APPL SelfMonitoring VersionChanges=N
+
+//NAME SelfMonitorReg P 60 AddTimeStamp ClearValues=Y Interval=180
+//SOURCE FILE /root/scripts/SelfMonitoringReg/log/check_full.log COPY 
+//RECORDSET  12
+//ATTRIBUTES NEWLINE
+
+DateTime	D       30   		DLMSTRBGN='='  DLMSTREND=''
+Code		D       15	ATOMIC  DLMSTRBGN='='  DLMSTREND=''
+Server		D       10   	ATOMIC	DLMSTRBGN='='  DLMSTREND=''
+ExecTime	C       10000   	DLMSTRBGN='='  DLMSTREND=''
+fsBadBlock	C       10000   	DLMSTRBGN='='  DLMSTREND=''
+fsFixCount	C       10000   	DLMSTRBGN='='  DLMSTREND=''
+fsReadWrite	D       20	   	DLMSTRBGN='='  DLMSTREND=''
+osUptime	D       20	   	DLMSTRBGN='='  DLMSTREND=''
+osUptimeSec	C       100000000   	DLMSTRBGN='='  DLMSTREND=''
+itmRunCnt	C       1000	   	DLMSTRBGN='='  DLMSTREND=''
+itmInstallCnt	C       1000	   	DLMSTRBGN='='  DLMSTREND=''
+ncoRunCnt	C       1000	   	DLMSTRBGN='='  DLMSTREND=''
+ 

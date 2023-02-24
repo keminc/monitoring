@@ -1,0 +1,55 @@
+//APPL PORTSCANER ProductCode=PS VersionChanges=N
+
+
+
+//NAME ITM_PortStatus P 60 AddTimeStamp ClearValues=Y Interval=90
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/PortScaner/log/ITM_port_availability.log COPY 
+//RECORDSET  10
+//ATTRIBUTES NEWLINE
+SysType			D       10   	DLMSTRBGN='='  DLMSTREND=''
+Code			D       50 	 ATOMIC   	DLMSTRBGN='='  DLMSTREND=''
+Name			D	160	DLMSTRBGN='='  DLMSTREND=''
+IP			D	100	DLMSTRBGN='='  DLMSTREND=''
+P22			D	100	DLMSTRBGN='='  DLMSTREND=''
+P1918			D	100	DLMSTRBGN='='  DLMSTREND=''
+P1920			D	100	DLMSTRBGN='='  DLMSTREND=''
+P15200			D	50	DLMSTRBGN='='  DLMSTREND=''
+P50000			D	100	DLMSTRBGN='='  DLMSTREND=''
+TotalStatus 		C	100	DLMSTRBGN='='  DLMSTREND=''
+
+
+//NAME ITNM_PortStatus  60 AddTimeStamp ClearValues=Y Interval=90
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/PortScaner/log/ITNM_port_availability.log COPY 
+//RECORDSET  12
+//ATTRIBUTES NEWLINE
+SysType			D       10   	DLMSTRBGN='='  DLMSTREND=''
+Code			D       50  ATOMIC  	DLMSTRBGN='='  DLMSTREND=''
+Name			D	160	DLMSTRBGN='='  DLMSTREND=''
+IP			D	100	DLMSTRBGN='='  DLMSTREND=''
+P22			D	100	DLMSTRBGN='='  DLMSTREND=''
+P4100			D	100	DLMSTRBGN='='  DLMSTREND=''
+P4200			D	100	DLMSTRBGN='='  DLMSTREND=''
+P4300			D	100	DLMSTRBGN='='  DLMSTREND=''
+P16310			D	100	DLMSTRBGN='='  DLMSTREND=''
+P16311			D	100	DLMSTRBGN='='  DLMSTREND=''
+P50000			D	100	DLMSTRBGN='='  DLMSTREND=''
+TotalStatus 		C	100	DLMSTRBGN='='  DLMSTREND=''
+
+//NAME SNMPCheckReg P 60 AddTimeStamp ClearValues=Y Interval=90
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/CheckSnmpReg/log/snmp_check_full.log COPY
+//ATTRIBUTES TAB
+PFRCode                         D       20              ATOMIC
+SNMPDevIP                       D       50		ATOMIC
+Status                          N       20
+DTime                           D       30
+
+
+//NAME SNMPRoadCheckReg P 60 AddTimeStamp ClearValues=Y Interval=90
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/Channel2Reg/Full_log_for_avab.log COPY
+//ATTRIBUTES TAB
+PFRCode                         D       20              ATOMIC
+SNMPDevIP                       D       50		ATOMIC
+Status                          C       200
+DelayT	                        C       2000
+DTime                           D       30
+

@@ -1,0 +1,29 @@
+//APPL ChannelStat VersionChanges=N
+
+
+//NAME ChannelSt P 60 AddTimeStamp ClearValues=Y Interval=90
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/Channel2Reg/Full_log.log COPY 
+//ATTRIBUTES TAB
+PFRCode				D       20   		ATOMIC 
+Date				D       50   		
+IP				D       50	    	
+DelayTime			N	20		
+
+
+
+//NAME ChlWidth P 60 AddTimeStamp ClearValues=Y Interval=90
+//SOURCE FILE /opt/IBM/ITM/lx8266/um/scripts/ChannelWidth/log/full_log.log COPY 
+//ATTRIBUTES TAB
+PFRCode				D       20   		ATOMIC 
+Status				D	10
+StatusNum			C	10
+Loss				C	101
+DelayTime			C	10000
+Speed				C	100000		
+SpeedSt				D	20 		DEFAULT='Offline'
+TimeStamp			D	30
+
+
+
+
+
