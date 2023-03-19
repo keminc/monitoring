@@ -1,0 +1,3 @@
+#HOSTNAME       NAME    CERT_PREFIX
+#
+mysite.com	 mysite_home certificate_name
